@@ -1,0 +1,197 @@
+.about-me_bg {
+    z-index: 7;
+    position: absolute;
+    width: 50%;
+    height: 600px;
+    background: url('../../images/landing_page/about_me/main-photo.jpg') no-repeat center / cover;
+}
+
+.about-me {
+    z-index: 8;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.about-me__text-box {
+    width: 50%;
+}
+
+.about-me__text-box_font {
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    width: 70%;
+}
+
+.about-me__container-images {
+    position: relative;
+    width: 50%;
+}
+
+.about-me__image-box {
+    position: absolute;
+}
+
+.about-me__container-images > .about-me__image-box:first-child {
+    top: 40px;
+    left: 20px;
+    width: 300px;
+    height: 380px;
+}
+
+.about-me__container-images > .about-me__image-box:first-child > .about-me__image_font {
+    text-align: center;
+}
+
+.about-me__container-images > .about-me__image-box:last-child {
+    bottom: 0;
+    right: 0;
+    width: 370px;
+    height: 420px;
+}
+
+.about-me__container-images > .about-me__image-box:last-child > .about-me__image_font {
+    position: absolute;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    bottom: 72px;
+    right: 300px;
+}
+
+.about-me_image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about-me__image_font {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1400px) {
+    .about-me__container-images > .about-me__image-box:first-child {
+        width: 260px;
+        height: 340px;
+    }
+
+    .about-me__container-images > .about-me__image-box:last-child {
+        width: 330px;
+        height: 380px;
+    }
+
+    .about-me__container-images > .about-me__image-box:last-child > .about-me__image_font {
+        bottom: 72px;
+        right: 260px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about-me__container-images > .about-me__image-box:first-child {
+        width: 200px;
+        height: 300px;
+    }
+
+    .about-me__container-images > .about-me__image-box:last-child {
+        width: 270px;
+        height: 340px;
+    }
+
+    .about-me__container-images > .about-me__image-box:last-child > .about-me__image_font {
+        bottom: 72px;
+        right: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-me_bg,
+    .about-me {
+        height: 500px;
+    }
+
+    .about-me__container-images > .about-me__image-box:first-child {
+        top: 20px;
+        width: 160px;
+        height: 240px;
+    }
+
+    .about-me__container-images > .about-me__image-box:last-child {
+        width: 200px;
+        height: 260px;
+    }
+
+    .about-me__container-images > .about-me__image-box:last-child > .about-me__image_font {
+        right: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me_bg {
+        width: 100%;
+        height: 400px;
+    }
+
+    .about-me {
+        height: 800px;
+    }
+
+    .about-me__container-images,
+    .about-me__text-box {
+        width: 100%;
+        height: 50%;
+    }
+
+    .about-me__text-box_font {
+        width: 90%;
+    }
+
+    .about-me__container-images > .about-me__image-box:first-child {
+        top: 20px;
+        left: 0;
+        width: 200px;
+        height: 260px;
+    }
+
+    .about-me__container-images > .about-me__image-box:last-child {
+        width: 260px;
+        height: 280px;
+    }
+
+    .about-me__container-images > .about-me__image-box:last-child > .about-me__image_font {
+        bottom: 60px;
+        right: 210px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-me_bg {
+        height: 300px;
+    }
+
+    .about-me {
+        height: 600px;
+    }
+
+    .about-me__text-box_font {
+        width: 100%;
+        font-size: .8rem;
+    }
+
+    .about-me__container-images > .about-me__image-box:first-child {
+        top: 10px;
+        width: 120px;
+        height: 180px;
+    }
+
+    .about-me__container-images > .about-me__image-box:last-child {
+        width: 160px;
+        height: 200px;
+    }
+
+    .about-me__container-images > .about-me__image-box:last-child > .about-me__image_font {
+        right: 100px;
+    }
+}

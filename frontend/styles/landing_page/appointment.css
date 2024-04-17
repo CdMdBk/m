@@ -1,0 +1,111 @@
+.appointment {
+    background-color: #bdbdbd;
+    min-height: 600px;
+}
+
+.appointment_bg {
+    background: url('../../images/landing_page/appointment/appointment-bg.png') no-repeat center / cover;
+    height: 100%;
+}
+
+.appointment__flex-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.appointment__inputs-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.appointment__inputs-box > fieldset {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+.appointment__input {
+    padding: 14px 20px;
+    margin-bottom: 40px;
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+
+.appointment__input_bg {
+    background-color: initial;
+    color: #fff;
+    border: 2px solid #bdbdbd;
+    border-radius: 2px;
+}
+
+.appointment__input_bg::placeholder {
+    color: #fff;
+}
+
+.appointment__input_bg::placeholder:hover {
+    color: var(--accent-color);
+}
+
+.appointment__input_bg:hover {
+    color: var(--accent-color);
+}
+
+.appointment__input-box {
+    position: relative;
+    width: 100%;
+}
+
+.appointment__input-box_arrow {
+    position: absolute;
+    right: 20px;
+    transform: translate(0, 14px);
+    width: 16px;
+    height: 20px;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+textarea.appointment__input_bg,
+textarea.appointment__input_bg:hover,
+textarea.appointment__input_bg::placeholder {
+    color: #fff;
+}
+
+.appointment__button {
+    padding: 8px 30px;
+    border-radius: 30px;
+}
+
+.appointment__button_style {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .appointment__inputs-box > fieldset {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .appointment {
+        min-height: 900px;
+    }
+
+    .appointment__inputs-box {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .appointment__inputs-box > fieldset {
+        width: 90%;
+    }
+}

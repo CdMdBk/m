@@ -1,0 +1,37 @@
+/*Merriweather Light*/
+
+@font-face {
+    font-family: 'Merriweather Light';
+    src:
+        url('../fonts/Merriweather_Light/Merriweather-Light.eot') format('eot'),
+        url('../fonts/Merriweather_Light/Merriweather-Light.ttf') format('truetype'),
+        url('../fonts/Merriweather_Light/Merriweather-Light.woff') format('woff'),
+        url('../fonts/Merriweather_Light/Merriweather-Light.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*Merriweather Bold*/
+
+@font-face {
+    font-family: 'Merriweather Bold';
+    src:
+            url('../fonts/Merriweather_Bold/Merriweather-Bold.ttf') format('truetype');
+            url('../fonts/Merriweather_Bold/Merriweather-Bold.eot') format('eot');
+            url('../fonts/Merriweather_Bold/Merriweather-Bold.woff') format('woff');
+            url('../fonts/Merriweather_Bold/Merriweather-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/*IM_FELL_French_Canon_SC_Regular*/
+
+@font-face {
+    font-family: 'French Canon';
+    src:
+            url('../fonts/IM_FELL_French_Canon_SC_Regular/IM_FELL_French_Canon_SC.eot') format('eot'),
+            url('../fonts/IM_FELL_French_Canon_SC_Regular/IM_FELL_French_Canon_SC.ttf') format('truetype'),
+            url('../fonts/IM_FELL_French_Canon_SC_Regular/IM_FELL_French_Canon_SC.woff') format('woff'),
+            url('../fonts/IM_FELL_French_Canon_SC_Regular/IM_FELL_French_Canon_SC.woff2') format('woff2');
+    font-style: normal;
+}

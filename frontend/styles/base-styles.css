@@ -1,0 +1,116 @@
+:root {
+    --accent-color: #532C76;
+    --color-bg: #131314;
+    --purple-color: #532C7680;
+    --color-gray: #7f7f7f;
+    --timing: .4s;
+}
+
+html {
+    font-size: 16px;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Merriweather Light', sans-serif;
+}
+
+::selection {
+    background-color: var(--accent-color);
+}
+
+::-webkit-scrollbar {
+    width: 1.6vw;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+input, select, textarea, button {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.body_lock {
+    overflow: hidden;
+}
+
+.heading {
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+
+.heading[data-admin-heading] {
+    padding: 0;
+    margin: 0;
+    width: auto;
+
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.appointment .heading {
+    text-align: center;
+}
+
+.heading_font {
+    color: #fff;
+    font-weight: 100;
+    font-size: 2.4rem;
+    line-height: 1.6rem;
+}
+
+.logo {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 60px;
+}
+
+.logo_size {
+    object-fit: contain;
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 992px) {
+    .heading_font {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading[data-admin-heading] {
+        font-size: 1.4rem;
+    }
+}

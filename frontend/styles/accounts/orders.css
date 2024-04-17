@@ -1,0 +1,113 @@
+.orders-data {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #fff;
+    border-radius: 20px 0 0 20px;
+    padding: 20px 30px;
+    overflow-y: scroll;
+    height: 600px;
+
+    margin-bottom: 30px;
+}
+
+.orders-data::-webkit-scrollbar {
+    width: 10px;
+}
+
+.orders-data__order {
+    display: flex;
+    align-items: center;
+
+    height: 93px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.orders-data__cell:first-child {
+    width: 5%;
+}
+
+.orders-data__cell {
+    width: 20%;
+}
+
+.orders-data__cell:last-child {
+    width: 15%;
+}
+
+.orders-data__cell_font {
+    word-break: break-all
+}
+
+.orders-data__cell_font {
+    color: #fff;
+    text-align: center;
+}
+
+.orders-data__cell {
+
+}
+
+select.orders-data__cell option {
+    color: #000;
+}
+
+select.orders-data__cell_font {
+    background-color: initial;
+    border-radius: 20px;
+    border: 2px solid #fff;
+
+    color: #fff;
+}
+
+.orders-data__cell_delete {
+    display: none;
+}
+
+.orders-data__button-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.orders-data__button {
+    padding: 14px 30px;
+}
+
+.orders-data__button:nth-child(2) {
+    display: none;
+}
+
+.orders-data__button_appearance {
+    border-radius: 20px;
+    color: #fff;
+    background-color: var(--accent-color);
+    transition: var(--timing);
+}
+
+.orders-data__button_appearance:hover {
+    color: var(--accent-color);
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .orders-data__order {
+        width: 160%;
+    }
+}
+
+@media (max-width: 576px) {
+    .orders-data__order {
+        width: 200%;
+    }
+}
+
+@media (max-width: 420px) {
+    .orders-data__order {
+        width: 240%;
+    }
+}
+
+@media (max-width: 360px) {
+    .orders-data__order {
+        width: 300%;
+    }
+}

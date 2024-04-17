@@ -1,0 +1,26 @@
+.account {
+    min-height: 100vh;
+    /*max-height: 200vh;*/
+    background: url('../../images/accounts/bg.png') no-repeat center / cover;
+}
+
+.nav {
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.account__container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    .account__container {
+        /*flex-direction: column;*/
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}

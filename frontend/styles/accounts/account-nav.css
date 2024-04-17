@@ -1,0 +1,144 @@
+.account-nav {
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    padding: 0 0px 160px 16px;
+    width: 20%;
+
+    overflow: hidden;
+
+    background-color: var(--color-bg);
+}
+
+.account-nav[data-nav-personal] {
+    background: url('../../images/accounts/nav/bg-nav.png') no-repeat center / cover;
+}
+
+.account-nav[data-admin-nav] {
+    padding-top: 40px;
+}
+
+.account-nav_font {
+    color: #fff;
+    text-align: start;
+    cursor: pointer;
+}
+
+.account-nav_font_active {
+    text-decoration: underline;
+}
+
+.account-nav_active-status {
+    display: block;
+}
+
+.account-nav__content {
+    background: initial;
+    width: 100%;
+}
+
+.account-nav__content:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.account-nav__content[data-nav-box-avatar] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 80px;
+    margin-bottom: 60px;
+    background-color: var(--color-bg);
+}
+
+.account-nav__content[data-nav-box-avatar] > p {
+    margin-right: 20px;
+}
+
+.account-nav__user {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.account-nav__user_active-status {
+    display: none;
+}
+
+.account-nav__svg_color {
+    fill: #fff;
+}
+
+.account-nav__svg_color_active {
+    fill: var(--accent-color);
+}
+
+@media (max-width: 1300px) {
+    .account-nav_font {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .account-nav {
+        position: fixed;
+        left: 0;
+        bottom: 0px;
+        height: 80px;
+        width: 100vw;
+
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+
+        padding: 20px;
+    }
+
+    .account-nav[data-admin-nav] {
+        padding: 20px;
+    }
+
+    .account-nav__content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .account-nav__content:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .account-nav__content[data-nav-box-avatar] {
+        justify-content: center;
+        align-items: center;
+
+        height: 80px;
+        margin-bottom: 0;
+        background-color: var(--color-bg);
+    }
+
+    .account-nav__user {
+        align-items: center;
+        margin: 0;
+    }
+
+    .account-nav__user_active-status {
+        display: flex;
+    }
+
+    .account-nav_active-status {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .account-nav__user {
+        width: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    .account-nav__user {
+        width: 30px;
+    }
+}

@@ -1,0 +1,190 @@
+.account-photos {
+    width: 50%;
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.account-photos__heading {
+    line-height: 60px;
+}
+
+.account-photos__heading_font {
+    font-size: 1.6rem;
+    color: #fff;
+    font-family: 'Merriweather Bold', sans-serif;
+}
+
+.account-photos__flex-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    min-height: 40vh;
+    max-height: 60vh;
+
+    overflow-y: scroll;
+}
+
+.account-photos__flex-box::-webkit-scrollbar-button,
+.account-albums__container::-webkit-scrollbar-button {
+    display: none;
+}
+
+.account-photos__flex-box::-webkit-scrollbar,
+.account-albums__container::-webkit-scrollbar {
+    width: 0.6vw;
+}
+
+.account-photos__photo {
+    width: calc(100% / 3);
+    padding: 10px;
+}
+
+.account-photos_image {
+    object-fit: contain;
+    width: 100%;
+}
+
+.account-albums {
+    width: 30%;
+    padding: 20px;
+
+    overflow: hidden;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.account-albums__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    min-height: 40vh;
+    max-height: 70vh;
+
+    overflow-y: scroll;
+}
+
+.account-albums__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 48%;
+    margin-bottom: 30px;
+
+    background-color: var(--color-bg);
+}
+
+.account-albums__photo {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.account-albums__text-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.account-albums_text {
+    color: #fff;
+}
+
+.account-albums__text-box > .account-albums_text:nth-child(1) {
+    font-size: 0.8rem;
+}
+
+.account-albums__text-box > .account-albums_text:nth-child(2) {
+    font-size: 0.6rem;
+}
+
+@media (max-width: 1300px) {
+    .account-photos {
+        width: 60%;
+    }
+
+    .account-albums {
+        width: 20%;
+    }
+
+    /*.account-photos__flex-box {*/
+    /*    min-height: 30vh;*/
+    /*    max-height: 50vh;*/
+
+    /*    overflow-y: scroll;*/
+    /*}*/
+
+    .account-albums__item {
+        width: 100%;
+        /*height: 220px;*/
+    }
+
+    .account-albums__text-box > .account-albums_text:nth-child(1) {
+        font-size: 0.6rem;
+    }
+
+    .account-albums__text-box > .account-albums_text:nth-child(2) {
+        font-size: 0.4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .account-photos {
+        width: 70%;
+    }
+
+    .account-albums {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .account-photos {
+        order: 2;
+        width: 100%;
+    }
+
+    .account-albums {
+        order: 1;
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .account-albums::-webkit-scrollbar {
+        height: 0.6vh;
+    }
+
+    .account-photos__photo {
+        padding: 5px;
+    }
+
+    .account-albums__container {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+
+        min-height: 10vh;
+
+        overflow: initial;
+    }
+
+    .account-albums__item {
+        width: 200px;
+        margin: 0 20px 0 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .account-photos__photo {
+        padding: 2px;
+    }
+
+    .account-albums__item {
+        margin: 0 10px 0 0;
+    }
+}
